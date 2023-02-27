@@ -16,6 +16,7 @@ class CreateCheckoutsTable extends Migration
             $table->string('phone');
             $table->string('address');
             $table->string('product_id');
+            $table->integer('time_elapsed')->nullable();
             $table->timestamps();
         });
     }
